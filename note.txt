@@ -57,6 +57,9 @@ table alter, add a column:
 1:=> npx sequelize-cli migration:generate --name add-phone-column
 2:=> npx sequelize-cli db:migrate
 
+npx sequelize-cli model:generate --name Address --attributes area:string
+npx sequelize-cli db:migrate
+
 step 8:
 -------
 install template engine, ejs: 

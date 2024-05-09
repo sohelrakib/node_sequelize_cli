@@ -19,6 +19,8 @@
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,6 +35,14 @@
                             </td>
                             <td>
                                 <%= user.email %>
+                            </td>
+                            <td>
+                                <%= user.phone %>
+                            </td>
+                            <td>
+                                <% user.Addresses.forEach(address => { %>
+                                  <%= address.city %>, <%= address.area %>, <%= address.house_no %>, <%= address.road_no %><br>
+                                <% }) %>
                             </td>
                         </tr>
                     <% } %>
