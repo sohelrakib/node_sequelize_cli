@@ -60,6 +60,10 @@ table alter, add a column:
 npx sequelize-cli model:generate --name Address --attributes area:string
 npx sequelize-cli db:migrate
 
+now I will add extra 2 columns to the same table(user):
+1=>> npx sequelize-cli migration:generate --name add-dob-and-status-to-user
+2=>> npx sequelize-cli db:migrate
+
 step 8:
 -------
 install template engine, ejs: 
